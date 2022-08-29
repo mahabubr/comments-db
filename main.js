@@ -10,7 +10,9 @@ const displayData = comments => {
     for (let comment of comments.slice(0, 20)) {
         // console.log(comment)
         const displayDiv = document.createElement('div')
-        displayDiv.classList.add('col-3')
+        displayDiv.classList.add('col-12')
+        displayDiv.classList.add('col-md-6')
+        displayDiv.classList.add('col-lg-3')
         displayDiv.innerHTML = `
         <div onclick="diplayDetails(${comment.id})" style="min-height: 120px;">
             <div class="collapse collapse-horizontal" id="collapseWidthExample">
